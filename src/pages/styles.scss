@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+// Custom variables
+
+@import "~bulma/bulma.sass";
+
+.burger-line {
+  height: 2px !important;
+}
+
+.hero-body::before {
+  background-color: rgba(0, 0, 0, 0.2);
+  content: '';
+  display: inline-block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.hero-body {
+  background-image: url("/pizza-banner-full.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+  @media (max-width: $widescreen) {
+    background-image: url("/pizza-banner-mid.jpg");
+  }
+
+  @media (max-width: $tablet) {
+    background-image: url("/pizza-banner-small.jpg");
+  }
+}
+
+.arrow-down {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 50px;
+  text-align: center;
+}
