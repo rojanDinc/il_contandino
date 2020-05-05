@@ -5,7 +5,7 @@ import NavLinks from '../partials/nav-links'
 
 export default () => {
   const [isBurgerOpen, setBurgerOpen] = useState(false)
-  const [scrollOffset, setScrollOffset] = useState(0)
+  const [isNavbarTransparent, setNavbarTransparent] = useState(true)
 
   const CHEVRON_ICON_SIZE = 30
 
@@ -19,7 +19,11 @@ export default () => {
 
   const onScroll = () => {
     const offset = document.body.scrollTop || document.documentElement.scrollTop
-    setScrollOffset(offset)
+    if (offset > 10) {
+      setNavbarTransparent(false)
+    } else {
+      setNavbarTransparent(true)
+    }
   }
 
   const onToggle = () => setBurgerOpen(!isBurgerOpen)
@@ -27,7 +31,7 @@ export default () => {
   return (
     <section className="hero is-fullheight">
       <div className="hero-head">
-        <header className="navbar is-fixed-top" style={{backgroundColor: `${scrollOffset > 10 ? 'white': 'transparent'}`}}>
+        <header className="navbar is-fixed-top" style={{backgroundColor: `${isNavbarTransparent? 'transparent': 'white'}`}}>
           <div className="container">
             <div className="navbar-brand">
               <a className="navbar-item" href="https://bulma.io">
@@ -41,7 +45,7 @@ export default () => {
             </div>
             <div id="navbarMenuHeroC" className={`navbar-menu ${isBurgerOpen && 'is-active'}`}>
               <div className="navbar-end">
-                <NavLinks />
+                <NavLinks isNavbarTransparent={isNavbarTransparent} />
               </div>
             </div>
           </div>
@@ -50,10 +54,10 @@ export default () => {
 
       <div className="hero-body">
         <div className="container has-text-centered">
-          <h1 className="title has-text-white has-text-weight-bold">
-            Il contandino
+          <h1 className="title has-text-white has-text-weight-bold is-size-1 special-title">
+            Il contadino
           </h1>
-          <h2 className="subtitle has-text-white">
+          <h2 className="subtitle has-text-white is-size-4">
             Pizza restaurang
           </h2>
         </div>
