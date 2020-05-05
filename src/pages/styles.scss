@@ -1,6 +1,10 @@
 @charset "utf-8";
 
 // Custom variables
+@font-face {
+  font-family: "LobsterTwo";
+  src: url("../../static/Lobster_Two/LobsterTwo-Regular.ttf") format("tff");
+}
 
 @import "~bulma/bulma.sass";
 
@@ -9,7 +13,7 @@
 }
 
 .hero-body::before {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
   content: '';
   display: inline-block;
   height: 100%;
@@ -41,4 +45,8 @@
   right: 0;
   bottom: 50px;
   text-align: center;
+}
+
+.special-title {
+  font-family: "LobsterTwo";
 }
