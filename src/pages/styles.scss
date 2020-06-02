@@ -2,8 +2,30 @@
 
 // Custom variables
 @font-face {
-  font-family: "LobsterTwo";
-  src: url("../../static/Lobster_Two/LobsterTwo-Regular.ttf") format("tff");
+  font-family: "Satisfy";
+  src: url("../../static/Satisfy/Satisfy-Regular.ttf") format("tff");
+}
+
+$spaceamounts: (0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100); // Adjust this to include the pixel amounts you need.
+$sides: (top, bottom, left, right); // Leave this variable alone
+@each $space in $spaceamounts {
+    @each $side in $sides {
+        .m#{str-slice($side, 0, 1)}-#{$space} {
+            margin-#{$side}: #{$space}px !important;
+        }
+        .p#{str-slice($side, 0, 1)}-#{$space} {
+            padding-#{$side}: #{$space}px !important;
+        }
+    }
+}
+
+@each $space in $spaceamounts {
+    .m-#{$space} {
+        margin: #{$space}px !important;
+    }
+    .p-#{$space} {
+        padding: #{$space}px !important;
+    }
 }
 
 @import "~bulma/bulma.sass";
@@ -39,6 +61,46 @@
   }
 }
 
+#menu-picture {
+  background-image: url("/drink_glasses_clash_full.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 260px;
+  height: 500px;
+
+  @media (max-width: $widescreen) {
+    background-image: url("/drink_glasses_clash_mid.jpg");
+    height: 380px;
+  }
+
+  @media (max-width: $tablet) {
+    background-image: url("/drink_glasses_clash_small.jpg");
+    height: 260px;
+  }
+}
+
+#about-picture {
+  background-image: url("/drink_glasses_clash_full.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 260px;
+  height: 500px;
+
+  @media (max-width: $widescreen) {
+    background-image: url("/drink_glasses_clash_mid.jpg");
+    height: 380px;
+  }
+
+  @media (max-width: $tablet) {
+    background-image: url("/drink_glasses_clash_small.jpg");
+    height: 260px;
+  }
+}
+
 .arrow-down {
   position: absolute;
   left: 0;
@@ -48,5 +110,17 @@
 }
 
 .special-title {
-  font-family: "LobsterTwo";
+  font-family: "Satisfy";
+}
+
+.divider {
+  padding: 20px !important;
+}
+
+.contact-info-label {
+  font-weight: bold;
+}
+
+footer {
+  background-color: #ffffff !important;
 }

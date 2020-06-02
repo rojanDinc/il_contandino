@@ -58,7 +58,7 @@ export default () => {
             Il contadino
           </h1>
           <h2 className="subtitle has-text-white is-size-4">
-            Pizza restaurang
+            Restaurang i Hökarängen
           </h2>
         </div>
       </div>
