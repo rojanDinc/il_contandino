@@ -34,8 +34,8 @@ export default () => {
         <header className="navbar is-fixed-top" style={{backgroundColor: `${isNavbarTransparent? 'transparent': 'white'}`}}>
           <div className="container">
             <div className="navbar-brand">
-              <a className="navbar-item" href="https://bulma.io">
-                <h1 className={`is-size-4 special-title ${isNavbarTransparent && 'has-text-white'}`}>Il contadino</h1>
+              <a className="navbar-item" href={"https://" + window.location.host}>
+                <h1 className={`is-size-4 has-custom-font ${isNavbarTransparent && 'has-text-white'}`}>Il contadino</h1>
               </a>
               <span className={`navbar-burger burger ${isBurgerOpen && 'is-active'}`} onClick={onToggle} data-target="navbarMenuHeroC">
                 <span className={`${isNavbarTransparent && 'has-text-white'}`}></span>
@@ -52,9 +52,12 @@ export default () => {
         </header>
       </div>
 
-      <div className="hero-body">
+      <div className="hero-body is-clipped">
+        <video id="hero-video" autoPlay loop muted>
+          <source src="pizza-video-min.mp4" type="video/mp4" />
+        </video>
         <div className="container has-text-centered">
-          <h1 className="title has-text-white has-text-weight-bold is-size-1 special-title">
+          <h1 className="title has-text-white has-text-weight-bold big-title">
             Il contadino
           </h1>
           <h2 className="subtitle has-text-white is-size-4">
