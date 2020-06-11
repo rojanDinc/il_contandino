@@ -16,7 +16,7 @@ export default () => (
     {/* Food */}
     <section id="food-section">
       <div className="container">
-        <h2 className="is-size-1 has-text-weight-bold mb-20 pt-40 special-title has-text-centered">Mat</h2>
+        <h2 className="is-size-1 has-text-weight-bold mb-20 pt-40 has-custom-font has-text-centered">Mat</h2>
         <div className="columns">
           <div className="column">
             <Card
@@ -62,7 +62,7 @@ export default () => (
     {/* Meny */}
     <section id="menu-section">
       <div className="container">
-        <h2 className="is-size-1 has-text-weight-bold mb-20 pt-40 special-title has-text-centered">Meny</h2>
+        <h2 className="is-size-1 has-text-weight-bold mb-20 pt-40 has-custom-font has-text-centered animate__animated animate__fadeIn">Meny</h2>
         <FoodMenu />
       </div>
     </section>
@@ -71,7 +71,7 @@ export default () => (
     {/* About */}
     <section id="about-section">
       <div className="container">
-        <h2 className="is-size-1 has-text-weight-bold mb-20 pt-40 special-title has-text-centered">Om oss</h2>
+        <h2 className="is-size-1 has-text-weight-bold mb-20 pt-40 has-custom-font has-text-centered">Om oss</h2>
         <div className="columns reverse-column">
           <div className="column">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi velit quam, condimentum vitae ornare at, blandit sed neque. Aenean bibendum ante id tempus tristique. Maecenas lacinia ante id tristique porta. Vestibulum laoreet at leo eget dapibus. Aliquam feugiat metus risus, eu rutrum ligula rhoncus at. Donec semper, tellus id porttitor lobortis, lorem libero lacinia augue, ac vulputate orci lorem et libero. Donec imperdiet dolor at risus viverra dictum. Praesent varius finibus mauris, vitae molestie nulla pharetra nec. Aenean lacinia eget nisi et fringilla.</p>
@@ -87,7 +87,7 @@ export default () => (
     {/* Contact */}
     <section id="contact-section">
       <div className="container">
-        <h2 className="is-size-1 has-text-weight-bold mb-20 pt-40 special-title has-text-centered">Kontakt</h2>
+        <h2 className="is-size-1 has-text-weight-bold mb-20 pt-40 has-custom-font has-text-centered">Kontakt</h2>
         <iframe 
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2039.6183991347002!2d18.07998571633953!3d59.25581688163315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f79c05664d3cd%3A0x3033ce8faec8582b!2sil%20Contadino!5e0!3m2!1sen!2sse!4v1591128936520!5m2!1sen!2sse" 
           height="350" 
@@ -101,13 +101,13 @@ export default () => (
         </iframe>
         <div className="columns p-20">
           <div className="column has-text-centered">
-            <h4 className="is-size-3 has-text-weight-bold pt-25 mb-20 special-title">Info</h4>
+            <h4 className="is-size-3 has-text-weight-bold pt-25 mb-20 has-custom-font">Info</h4>
             <ContactInfoLabel label="Adress" labelDescription="Sirapsvägen 6, 123 56 Farsta"/>
             <ContactInfoLabel label="Telefon" labelDescription="08-604 80 07"/>
             <ContactInfoLabel label="E-mail" labelDescription="info@ilcontadino.se"/>
           </div>
           {/* <div className="column">
-            <h4 className="is-size-3 has-text-weight-bold pt-25 mb-20 has-text-centered special-title">Meddelande</h4>
+            <h4 className="is-size-3 has-text-weight-bold pt-25 mb-20 has-text-centered has-custom-font">Meddelande</h4>
             <Form />
           </div> */}
         </div>
