@@ -35,13 +35,13 @@ export default () => {
           <div className="container">
             <div className="navbar-brand">
               <a className="navbar-item" href="https://bulma.io">
-                <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"/>
+                <h1 className={`is-size-4 special-title ${isNavbarTransparent && 'has-text-white'}`}>Il contadino</h1>
               </a>
               <span className={`navbar-burger burger ${isBurgerOpen && 'is-active'}`} onClick={onToggle} data-target="navbarMenuHeroC">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
+                <span className={`${isNavbarTransparent && 'has-text-white'}`}></span>
+                <span className={`${isNavbarTransparent && 'has-text-white'}`}></span>
+                <span className={`${isNavbarTransparent && 'has-text-white'}`}></span>
+              </span>
             </div>
             <div id="navbarMenuHeroC" className={`navbar-menu ${isBurgerOpen && 'is-active'}`}>
               <div className="navbar-end">

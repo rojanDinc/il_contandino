@@ -6,6 +6,8 @@
   src: url("../../static/Satisfy/Satisfy-Regular.ttf") format("tff");
 }
 
+$title_underline_color: #d31515;
+
 $spaceamounts: (0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100); // Adjust this to include the pixel amounts you need.
 $sides: (top, bottom, left, right); // Leave this variable alone
 @each $space in $spaceamounts {
@@ -123,4 +125,31 @@ $sides: (top, bottom, left, right); // Leave this variable alone
 
 footer {
   background-color: #ffffff !important;
+}
+
+.columns {
+  margin: 0 auto !important;
+}
+.navbar-burger span {
+  height: 2px !important;
+}
+.navbar-burger span:nth-child(1) {
+  top: calc(50% - 7px) !important;
+}
+.navbar-burger span:nth-child(3) {
+  top: calc(50% + 5px) !important;
+}
+.picture-rounded {
+  border-radius: 6px;
+}
+
+.reverse-column {
+  @media (max-width: $tablet) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.top-side-rounded {
+  border-radius: 6px 6px 0 0;
 }

@@ -1,42 +1,41 @@
 import React from "react"
-import { Link } from "gatsby"
+import scrollTo from 'gatsby-plugin-smoothscroll'
 
 export default (props) => (
   <React.Fragment>
-    <Link
-      to="/"
+    <a
       className={`navbar-item ${props.isNavbarTransparent ? "has-text-white": ""}`}
-      activeClassName="is-active"
+      onClick={() => window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      })}
     >
       Hem
-    </Link>
-    <Link
-      to="#menu"
+    </a>
+    <a
       className={`navbar-item ${props.isNavbarTransparent ? "has-text-white": ""}`}
-      activeClassName="is-active"
+      onClick={() => scrollTo("#food-section")}
     >
       Mat
-    </Link>
-    <Link
-      to="/ab"
+    </a>
+    <a
       className={`navbar-item ${props.isNavbarTransparent ? "has-text-white": ""}`}
-      activeClassName="is-active"
+      onClick={() => scrollTo("#menu-section")}
     >
       Meny
-    </Link>
-    <Link
-      to="/ab"
+    </a>
+    <a
       className={`navbar-item ${props.isNavbarTransparent ? "has-text-white": ""}`}
-      activeClassName="is-active"
+      onClick={() => scrollTo("#about-section")}
     >
       Om oss
-    </Link>
-    <Link
-      to="/ds"
+    </a>
+    <a 
       className={`navbar-item ${props.isNavbarTransparent ? "has-text-white": ""}`}
-      activeClassName="is-active"
+      onClick={() => scrollTo("#contact-section")}
     >
       Kontakt
-    </Link>
+    </a>
   </React.Fragment>
 )
