@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faChevronDown} from "@fortawesome/free-solid-svg-icons"
 import NavLinks from '../partials/nav-links'
+import Lozad from 'lozad'
 
 export default () => {
   const [isBurgerOpen, setBurgerOpen] = useState(false)
@@ -11,6 +12,8 @@ export default () => {
 
   useEffect(() => {
     window.addEventListener('scroll', onScroll)
+    const observer = Lozad()
+    observer.observe()
 
     return () => {
       window.removeEventListener('scroll', onScroll)
@@ -55,7 +58,14 @@ export default () => {
       <div className="hero-body is-clipped">
         <div id="video-container">
           <div id="video-overlay"/>
-          <video id="hero-video" autoPlay loop muted>
+          <video
+            id="hero-video"
+            class="lozad"
+            data-poster="pizza-video-still.jpg"
+            autoPlay
+            loop
+            muted
+          >
             <source src="pizza-video-min.mp4" type="video/mp4" />
           </video>
         </div>
