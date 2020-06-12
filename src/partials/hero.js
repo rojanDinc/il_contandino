@@ -53,9 +53,12 @@ export default () => {
       </div>
 
       <div className="hero-body is-clipped">
-        <video id="hero-video" autoPlay loop muted>
-          <source src="pizza-video-min.mp4" type="video/mp4" />
-        </video>
+        <div id="video-container">
+          <div id="video-overlay"/>
+          <video id="hero-video" autoPlay loop muted>
+            <source src="pizza-video-min.mp4" type="video/mp4" />
+          </video>
+        </div>
         <div className="container has-text-centered">
           <h1 className="title has-text-white has-text-weight-bold big-title">
             Il contadino
