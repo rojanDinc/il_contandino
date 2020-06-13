@@ -24,7 +24,7 @@ export default () => (
               imageAlt="placeholder"
               title="Bar"
             >
-              {/* <p>Paragraph</p> */}
+              <p>Vår bar består av viner, likörer, öl och blandade drinkar från olika delar i världen.</p>
             </Card>
           </div>
           <div className="column">
@@ -33,7 +33,7 @@ export default () => (
               imageAlt="placeholder"
               title="Pizza"
             >
-              {/* <p>Paragraph</p> */}
+              <p>Våra pizzor kommer ut från ugnen med himmelsk doftande smält pizzaost med vår hemlagade tomatsås.</p>
             </Card>
           </div>
           <div className="column">
@@ -42,16 +42,16 @@ export default () => (
               imageAlt="placeholder"
               title="Pasta"
             >
-              {/* <p>Paragraph</p> */}
+              <p>Vi har ett brett urval av pastarätter utformade för att tillmötesgå alla preferenser.</p>
             </Card>
           </div>
           <div className="column">
             <Card
               imageSrc="stake_dinner_full.jpg"
               imageAlt="placeholder"
-              title="Grill"
+              title="Kött"
             >
-              {/* <p>Paragraph</p> */}
+              <p>Vi grillar allt från oxfilé till fläsk och serverar våra rätter med en sund sallad och en ljuvlig sås.</p>
             </Card>
           </div>
         </div>
@@ -69,19 +69,19 @@ export default () => (
     {/* END Meny */}
     <Divider size={60}/>
     {/* About */}
-    <section id="about-section">
+    {/* <section id="about-section">
       <div className="container">
         <h2 className="is-size-1 has-text-weight-bold mb-20 pt-40 has-custom-font has-text-centered">Om oss</h2>
         <div className="columns reverse-column">
-          <div className="column">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi velit quam, condimentum vitae ornare at, blandit sed neque. Aenean bibendum ante id tempus tristique. Maecenas lacinia ante id tristique porta. Vestibulum laoreet at leo eget dapibus. Aliquam feugiat metus risus, eu rutrum ligula rhoncus at. Donec semper, tellus id porttitor lobortis, lorem libero lacinia augue, ac vulputate orci lorem et libero. Donec imperdiet dolor at risus viverra dictum. Praesent varius finibus mauris, vitae molestie nulla pharetra nec. Aenean lacinia eget nisi et fringilla.</p>
+          <div className="column is-half is-offset-one-quarter">
+            <p className="has-text-centered">I hjärtat av Hökarängen hittar du il Contadino. Hos oss är det helt normalt att vara lycklig genom magen, oavsett om du är försiktig med peppar eller gillar att känna att du lever. Vi har en stor meny och en full bar med något för alla, trevlig atmosfär och uteservering. Allt mitt i lödningen.<br />Välkommen till oss!</p>
           </div>
           <div className="column">
             <div id="about-picture" className="picture-rounded" />
           </div>
         </div>
       </div>
-    </section>
+    </section> */}
     <Divider size={60}/>
     {/* END About */}
     {/* Contact */}

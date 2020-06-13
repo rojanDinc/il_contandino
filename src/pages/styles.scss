@@ -47,6 +47,10 @@ $sides: (top, bottom, left, right); // Leave this variable alone
   top: 0;
 }
 
+.hero-body {
+  position: relative;
+}
+
 #menu-picture {
   background-image: url("/drink_glasses_clash_full.jpg");
   background-position: center;

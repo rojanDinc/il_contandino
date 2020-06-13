@@ -25,12 +25,12 @@ export default (props) => (
     >
       Meny
     </a>
-    <a
+    {/* <a
       className={`navbar-item ${props.isNavbarTransparent ? "has-text-white": ""}`}
       onClick={() => scrollTo("#about-section")}
     >
       Om oss
-    </a>
+    </a> */}
     <a 
       className={`navbar-item ${props.isNavbarTransparent ? "has-text-white": ""}`}
       onClick={() => scrollTo("#contact-section")}
