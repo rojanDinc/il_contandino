@@ -37,7 +37,7 @@ export default () => {
         <header className="navbar is-fixed-top" style={{backgroundColor: `${isNavbarTransparent? 'transparent': 'white'}`}}>
           <div className="container">
             <div className="navbar-brand">
-              <a className="navbar-item" href={"https://" + window.location.host}>
+              <a className="navbar-item" href="https://ilcontadino.se">
                 <h1 className={`is-size-4 has-custom-font ${isNavbarTransparent && 'has-text-white'}`}>Il contadino</h1>
               </a>
               <span className={`navbar-burger burger ${isBurgerOpen && 'is-active'}`} onClick={onToggle} data-target="navbarMenuHeroC">
