@@ -104,7 +104,7 @@ export default () => (
             <h4 className="is-size-3 has-text-weight-bold pt-25 mb-20 has-custom-font">Info</h4>
             <ContactInfoLabel label="Adress" labelDescription="Sirapsvägen 6, 123 56 Farsta"/>
             <ContactInfoLabel label="Telefon" labelDescription="08-604 80 07"/>
-            <ContactInfoLabel label="E-mail" labelDescription="info@ilcontadino.se"/>
+            {/* <ContactInfoLabel label="E-mail" labelDescription="info@ilcontadino.se"/> */}
           </div>
           {/* <div className="column">
             <h4 className="is-size-3 has-text-weight-bold pt-25 mb-20 has-text-centered has-custom-font">Meddelande</h4>

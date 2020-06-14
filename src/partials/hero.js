@@ -69,7 +69,7 @@ export default () => {
             <source src="pizza-video-min.mp4" type="video/mp4" />
           </video>
         </div>
-        <div className="container has-text-centered">
+        <div id="title-container" className="container has-text-centered">
           <h1 className="title has-text-white has-text-weight-bold big-title">
             Il contadino
           </h1>
