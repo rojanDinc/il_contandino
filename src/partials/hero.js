@@ -48,7 +48,7 @@ export default () => {
             </div>
             <div id="navbarMenuHeroC" className={`navbar-menu ${isBurgerOpen && 'is-active'}`}>
               <div className="navbar-end">
-                <NavLinks isNavbarTransparent={isNavbarTransparent} />
+                <NavLinks isNavbarTransparent={isNavbarTransparent} isBurgerOpen={isBurgerOpen} />
               </div>
             </div>
           </div>

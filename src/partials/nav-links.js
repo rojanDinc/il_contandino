@@ -4,7 +4,7 @@ import scrollTo from 'gatsby-plugin-smoothscroll'
 export default (props) => (
   <React.Fragment>
     <a
-      className={`navbar-item ${props.isNavbarTransparent ? "has-text-white": ""}`}
+      className={`navbar-item ${props.isNavbarTransparent && !props.isBurgerOpen ? "has-text-white": ""}`}
       onClick={() => window.scrollTo({
         top: 0,
         left: 0,
@@ -14,25 +14,25 @@ export default (props) => (
       Hem
     </a>
     <a
-      className={`navbar-item ${props.isNavbarTransparent ? "has-text-white": ""}`}
+      className={`navbar-item ${props.isNavbarTransparent && !props.isBurgerOpen ? "has-text-white": ""}`}
       onClick={() => scrollTo("#food-section")}
     >
       Mat
     </a>
     <a
-      className={`navbar-item ${props.isNavbarTransparent ? "has-text-white": ""}`}
+      className={`navbar-item ${props.isNavbarTransparent && !props.isBurgerOpen ? "has-text-white": ""}`}
       onClick={() => scrollTo("#menu-section")}
     >
       Meny
     </a>
     {/* <a
-      className={`navbar-item ${props.isNavbarTransparent ? "has-text-white": ""}`}
+      className={`navbar-item ${props.isNavbarTransparent ? "has-text-white-touch": ""}`}
       onClick={() => scrollTo("#about-section")}
     >
       Om oss
     </a> */}
     <a 
-      className={`navbar-item ${props.isNavbarTransparent ? "has-text-white": ""}`}
+      className={`navbar-item ${props.isNavbarTransparent && !props.isBurgerOpen ? "has-text-white": ""}`}
       onClick={() => scrollTo("#contact-section")}
     >
       Kontakt
