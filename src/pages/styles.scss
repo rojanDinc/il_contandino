@@ -26,6 +26,10 @@ $sides: (top, bottom, left, right); // Leave this variable alone
 
 @import "~bulma/bulma.sass";
 
+body {
+  font-family: 'Satisfy';
+}
+
 .burger-line {
   height: 2px !important;
 }

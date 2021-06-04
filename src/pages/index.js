@@ -1,4 +1,3 @@
-import 'typeface-satisfy'
 import React from "react"
 import "./styles.scss"
 import "../../node_modules/bulma/"
