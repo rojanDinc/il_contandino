@@ -28,6 +28,7 @@
     "typeface-satisfy": "^0.0.72"
   },
   "devDependencies": {
+    "ftp-deploy": "^2.3.7",
     "prettier": "2.0.5"
   },
   "repository": {
