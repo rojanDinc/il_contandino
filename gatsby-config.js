@@ -6,5 +6,6 @@
 
 module.exports = {
   /* Your site config here */
+  pathPrefix: '/ilcontandino',
   plugins: [`gatsby-plugin-sass`, `gatsby-plugin-smoothscroll`],
 }
